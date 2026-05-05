@@ -1,44 +1,44 @@
 # Local AI Prompt Sender
 
-Groq API üzerinden birden fazla LLM modeline prompt gönderebileceğin masaüstü uygulaması.
+A desktop application to send prompts to multiple LLM models via the Groq API.
 
-## Gereksinimler
+## Requirements
 
 - Python 3.9+
 - Groq API key → [console.groq.com](https://console.groq.com)
 
-## Kurulum
+## Setup
 
-1. Repoyu klonla:
+1. Clone the repo:
    ```bash
-   git clone https://github.com/KULLANICI_ADIN/REPO_ADIN.git
-   cd REPO_ADIN
+   git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+   cd REPO_NAME
    ```
 
-2. Bağımlılıkları yükle:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. `.env.example` dosyasını `.env` olarak kopyala:
+3. Copy `.env.example` to `.env`:
    ```bash
    cp .env.example .env
    ```
 
-4. `.env` dosyasını aç ve kendi Groq API key'ini gir:
+4. Open `.env` and enter your Groq API key:
    ```
    GROQ_API_KEY=gsk_...
    ```
 
-5. Uygulamayı çalıştır:
+5. Run the app:
    ```bash
    python main.py
    ```
 
-## Modeller
+## Available Models
 
-| Seçenek | Model |
-|---------|-------|
+| Option | Model |
+|--------|-------|
 | Llama 3.3 70B | llama-3.3-70b-versatile |
 | Llama 3.1 8B | llama-3.1-8b-instant |
 | Qwen3 32B | qwen/qwen3-32b |
